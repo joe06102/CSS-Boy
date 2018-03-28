@@ -320,3 +320,45 @@ body {
     display: inline-block;
     vertical-align: bottom;
 }
+.content-card-wrap {
+    margin: 16px 8px;
+}
+.content-card {
+    border-radius: 6px;
+    overflow: hidden; 
+    color: white;
+    font-size: 22px;
+    font-family: "Flexo-Medium",arial,sans-serif;
+}
+.content-card-img-left {
+    float: left;
+    max-width: 132px; 
+    margin-right: 16px;
+}
+.content-card-title-right {
+    line-height: 1.2;
+    margin: 0 16px 0 0;
+    word-break: break-word;
+}
+
+/*
+ * colors
+*/
+.bg-yellow {
+    background-color: #eb3;
+}
+.bg-red {
+    background-color: #e31;
+}
+.bg-azure {
+    background-color: #3ad;
+}
+.bg-aqua {
+    background-color: #25c;
+}
+.bg-orange {
+    background-color: #f73;
+}
+.bg-green {
+    background-color: #5b6;
+}
