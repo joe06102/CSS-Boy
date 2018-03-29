@@ -274,7 +274,18 @@ body {
 .col-8-8 {
     width: 100%;
 }
-
+.table {
+    display: table;
+    width: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;    
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
 /**
  * banner
 */
@@ -284,14 +295,14 @@ body {
     background-color: #fff;
     font-size: 0;
 }
-
-.col-left {
+.col-left-wrap {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
 }
-.left-wrap {
+.col-left {
     margin: 16px 8px;
 }
+
 .left-banner-wrap {
 
 }
@@ -316,9 +327,12 @@ body {
     bottom: 0;
     max-width: 148px;
 }
-.col-right {
+.col-right-wrap {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
+}
+.col-right {
+    margin: 16px 8px;
 }
 .content-card-wrap {
     margin: 16px 8px;
@@ -329,6 +343,7 @@ body {
     color: white;
     font-size: 22px;
     font-family: "Flexo-Medium",arial,sans-serif;
+    font-weight: 400;    
 }
 .content-card-img-left {
     float: left;
@@ -337,10 +352,24 @@ body {
 }
 .content-card-title-right {
     line-height: 1.2;
-    margin: 0 16px 0 0;
     word-break: break-word;
+    max-width: 132px;
+    font-weight: inherit;
 }
-
+.content-card-img-top {
+    display: block;
+    max-width: 100%;
+}
+.content-card-title-bottom {
+    line-height: 1.2;
+    word-break: break-word;
+    font-weight: inherit;
+    padding: 16px;
+    margin: 0;
+}
+.content-card-margin {
+    margin: 16px 8px;
+}
 /*
  * colors
 */
@@ -361,4 +390,7 @@ body {
 }
 .bg-green {
     background-color: #5b6;
+}
+.bg-purple {
+    background-color: #85c;
 }
