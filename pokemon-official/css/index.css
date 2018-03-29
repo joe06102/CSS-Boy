@@ -1,51 +1,183 @@
-@font-face {
-    font-family: 'Flexo-Thin';
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_0_0.eot");
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_0_0.eot?#iefix") format("embedded-opentype"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_0_0.woff") format("woff"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_0_0.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: 'Flexo-Regular';
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_1_0.eot");
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_1_0.eot?#iefix") format("embedded-opentype"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_1_0.woff") format("woff"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_1_0.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: 'Flexo-Medium';
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_2_0.eot");
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_2_0.eot?#iefix") format("embedded-opentype"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_2_0.woff") format("woff"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_2_0.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: 'Flexo-Light';
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_3_0.eot");
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_3_0.eot?#iefix") format("embedded-opentype"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_3_0.woff") format("woff"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_3_0.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: 'Flexo-Demi';
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_4_0.eot");
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_4_0.eot?#iefix") format("embedded-opentype"),url("../fonts/285B7A_4_0.woff") format("woff"),url("../fonts/285B7A_4_0.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: 'Flexo-Bold';
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_5_0.eot");
-    src: url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_5_0.eot?#iefix") format("embedded-opentype"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_5_0.woff") format("woff"),url("https://assets.pokemon.com/static2/_ui/fonts/285B7A_5_0.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: "icons";
-    src: url("../fonts/icons.eot?456e640c93ca1d54e86948898799edfa");
-    src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"),url("../fonts/icons.woff?456e640c93ca1d54e86948898799edfa") format("woff"),url("../fonts/icons.ttf?456e640c93ca1d54e86948898799edfa") format("truetype"),url("../fonts/icons.svg?456e640c93ca1d54e86948898799edfa#icons") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-
 body {
-    background: url('https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png');
-    padding: 0;
-    margin: 0;
+    background: url('../img/body_bg.png');
+}
+
+/* color */
+.white {
+    color: #fff;
+}
+.black {
+    color: #000;
+}
+.yellow {
+    color: #eb3;
+}
+.red {
+    color: #e31;
+}
+.azure {
+    color: #3ad;
+}
+.aqua {
+    color: #25c;
+}
+.orange {
+    color: #f73;
+}
+.green {
+    color: #5b6;
+}
+.purple {
+    color: #85c;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-black {
+    background-color: #000;
+}
+.bg-yellow {
+    background-color: #eb3;
+}
+.bg-red {
+    background-color: #e31;
+}
+.bg-azure {
+    background-color: #3ad;
+}
+.bg-aqua {
+    background-color: #25c;
+}
+.bg-orange {
+    background-color: #f73;
+}
+.bg-green {
+    background-color: #5b6;
+}
+.bg-purple {
+    background-color: #85c;
+}
+
+/* icons */
+.icon {
+    display: block;
+    text-align: inherit;
+    margin: 0 auto;
+    line-height: 1.2;
+    font-family: icons;
+    font-size: 28px;
+    font-style: normal;
+    margin: 15px 0 8px;
+}
+.icon-home {
+    
+}
+.icon-home::before {
+    content: '\f11f';
+}
+.icon-pokeball {
+
+}
+.icon-pokeball::before {
+    content: '\f12a';
+}
+.icon-poketv {
+
+}
+.icon-poketv::before {
+    content: '\f12c';
+}
+.icon-joystick {
+
+}
+.icon-joystick::before {
+    content: '\f121';
+}
+.icon-card {
+
+}
+.icon-card::before {
+    content: '\f109';
+}
+.icon-videogame {
+
+}
+.icon-videogame::before {
+    content: '\f135';
+}
+.icon-event {
+
+}
+.icon-event::before {
+    content: '\f112';
+}
+
+/* layouts */
+.col-8-1 {
+    width: 12.5%;
+}
+.col-8-2 {
+    width: 25%;
+}
+.col-8-3 {
+    width: 37.5%;
+}
+.col-8-4 {
+    width: 50%;
+}
+.col-8-5 {
+    width: 62.5%;
+}
+.col-8-6 {
+    width: 75%;
+}
+.col-8-7 {
+    width: 87.5%;
+}
+.col-8-8 {
+    width: 100%;
+}
+.col-10-1 {
+    width: 10%;
+}
+.col-10-2 {
+    width: 20%;
+}
+.col-10-3 {
+    width: 30%;
+}
+.col-10-4 {
+    width: 40%;
+}
+.col-10-5 {
+    width: 50%;
+}
+.col-10-6 {
+    width: 60%;
+}
+.col-10-7 {
+    width: 70%;
+}
+.col-10-8 {
+    width: 80%;
+}
+.col-10-9 {
+    width: 90%;
+}
+.col-10-10 {
+    width: 100%;
+}
+.table {
+    display: table;
+    width: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;    
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
 }
 
 /* gus-nav */
@@ -178,67 +310,10 @@ body {
 .gus-pokeevent:hover {
     background-color: #5b6;
 }
-/*
- * icons
-*/
-.gus-btn-sub .icon {
-    display: block;
-    text-align: inherit;
-    margin: 0 auto;
-    line-height: 1.2;
-    font-family: icons;
-    font-size: 28px;
-    font-style: normal;
-    margin: 15px 0 8px;
-}
-.icon-home {
-    
-}
-.icon-home::before {
-    content: '\f11f';
-}
-.icon-pokeball {
 
-}
-.icon-pokeball::before {
-    content: '\f12a';
-}
-.icon-poketv {
-
-}
-.icon-poketv::before {
-    content: '\f12c';
-}
-.icon-joystick {
-
-}
-.icon-joystick::before {
-    content: '\f121';
-}
-.icon-card {
-
-}
-.icon-card::before {
-    content: '\f109';
-}
-.icon-videogame {
-
-}
-.icon-videogame::before {
-    content: '\f135';
-}
-.icon-event {
-
-}
-.icon-event::before {
-    content: '\f112';
-}
-
-/*
- * body
-*/
+/* body */
 .body {
-    background: url('https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png');
+    background: url('../img/container_bg.png');
     background-color: #fff;
     max-width: 1280px;
     position: relative;
@@ -247,48 +322,7 @@ body {
     padding: 25px 0 16px;
 }
 
-/**
- * layouts
-*/
-.col-8-1 {
-    width: 12.5%;
-}
-.col-8-2 {
-    width: 25%;
-}
-.col-8-3 {
-    width: 37.5%;
-}
-.col-8-4 {
-    width: 50%;
-}
-.col-8-5 {
-    width: 62.5%;
-}
-.col-8-6 {
-    width: 75%;
-}
-.col-8-7 {
-    width: 87.5%;
-}
-.col-8-8 {
-    width: 100%;
-}
-.table {
-    display: table;
-    width: 100%;
-}
-.table-cell {
-    display: table-cell;
-    vertical-align: middle;    
-}
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-}
-/**
- * banner
-*/
+/* banner */
 .banner {
     max-width: 930px;
     margin: 0 auto;
@@ -300,11 +334,20 @@ body {
     vertical-align: top;
 }
 .col-left {
-    margin: 16px 8px;
+    padding: 16px 8px;
 }
-
-.left-banner-wrap {
-
+.col-right-wrap {
+    display: inline-block;
+    vertical-align: top;
+}
+.col-right {
+    padding: 16px 8px;
+}
+.section-wrap-v {
+    margin: 16px 8px 0;
+}
+.section-wrap-h {
+    margin: 16px 0 16px 8px;
 }
 .banner-img {
     width: 100%;
@@ -326,16 +369,6 @@ body {
     right: 0;
     bottom: 0;
     max-width: 148px;
-}
-.col-right-wrap {
-    display: inline-block;
-    vertical-align: top;
-}
-.col-right {
-    margin: 16px 8px;
-}
-.content-card-wrap {
-    margin: 16px 8px;
 }
 .content-card {
     border-radius: 6px;
@@ -367,30 +400,14 @@ body {
     padding: 16px;
     margin: 0;
 }
-.content-card-margin {
-    margin: 16px 8px;
+
+/* pokedex */
+.dex {
+    overflow: hidden;
 }
-/*
- * colors
-*/
-.bg-yellow {
-    background-color: #eb3;
+.dex-flag-wrap {
+    max-width: 930px;
 }
-.bg-red {
-    background-color: #e31;
-}
-.bg-azure {
-    background-color: #3ad;
-}
-.bg-aqua {
-    background-color: #25c;
-}
-.bg-orange {
-    background-color: #f73;
-}
-.bg-green {
-    background-color: #5b6;
-}
-.bg-purple {
-    background-color: #85c;
+.bold {
+    font-weight: 700px;
 }
