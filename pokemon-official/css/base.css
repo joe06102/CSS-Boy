@@ -128,8 +128,67 @@
 .bg-purple {
     background-color: #85c;
 }
+.bg-trans {
+    background-color: transparent;
+}
 
 /* flow */
 .text-right {
     text-align: right;
+}
+
+/* types */
+.type-plain {
+    margin: 0 4px;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+.type-compound {
+    position: relative;
+    margin: 0 4px;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 4px;    
+}
+.type-compound::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    z-index: 0;
+}
+.type-compound::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.type-compound > span {
+    position: relative;
+    z-index: 1;
+}
+.fire {
+    background-color: #e31;
+}
+.ghost {
+    background-color: #86a;
+}
+.poison {
+    background-color: #c8d;
+}
+.psychic {
+    background-color: #f6c;
+}
+.fly {}
+.fly::before {
+    background-color: #4cf;
+}
+.fly::after {
+    background-color: #ccc;
 }

@@ -295,11 +295,41 @@ body {
     font-size: 0;
 }
 .dex-card-wrap {
-    display: inline-block;
     width: 250px;
+    overflow: hidden;
 }
 .dex-card {
-    margin: 2px 1px 0;
+    border-width: 2px 1px 0;
+    border-style: solid;
+    border-color: #000;
+    position: relative;
+}
+.dex-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .2);
+}
+.dex-card > .dex-desc h6 {
+    display: none;
+}
+.active {
+    width: 360px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.active > .dex-card > .dex-desc h6 {
+    display: block;
+}
+.active > .dex-card::after {
+    display: none;
+}
+.active .dex-id {
+    font-size: 140px;
 }
 .dex-avatar-wrap {
     background-color: #555;
@@ -309,7 +339,7 @@ body {
 }
 .dex-id {
     color: #999;
-    font-size: 100px;
+    font-size: 120px;
     text-align: center;
     font-family: "Flexo-Bold",arial,sans-serif;
     height: 250px;
@@ -329,7 +359,7 @@ body {
     font-size: 0;
 }
 .dex-desc-cols {
-    overflow: hidden;
+    /* s */
     font-family: "Flexo-Medium",arial,sans-serif;
     font-size: 16px;
 }
