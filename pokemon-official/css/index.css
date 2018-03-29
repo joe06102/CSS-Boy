@@ -2,182 +2,55 @@ body {
     background: url('../img/body_bg.png');
 }
 
-/* color */
-.white {
-    color: #fff;
-}
-.black {
-    color: #000;
-}
-.yellow {
-    color: #eb3;
-}
-.red {
-    color: #e31;
-}
-.azure {
-    color: #3ad;
-}
-.aqua {
-    color: #25c;
-}
-.orange {
-    color: #f73;
-}
-.green {
-    color: #5b6;
-}
-.purple {
-    color: #85c;
-}
-.bg-white {
-    background-color: #fff;
-}
-.bg-black {
-    background-color: #000;
-}
-.bg-yellow {
-    background-color: #eb3;
-}
-.bg-red {
-    background-color: #e31;
-}
-.bg-azure {
-    background-color: #3ad;
-}
-.bg-aqua {
-    background-color: #25c;
-}
-.bg-orange {
-    background-color: #f73;
-}
-.bg-green {
-    background-color: #5b6;
-}
-.bg-purple {
-    background-color: #85c;
-}
-
 /* icons */
 .icon {
-    display: block;
     text-align: inherit;
-    margin: 0 auto;
     line-height: 1.2;
     font-family: icons;
     font-size: 28px;
     font-style: normal;
-    margin: 15px 0 8px;
 }
 .icon-home {
-    
+    margin: 15px 0 8px;    
 }
 .icon-home::before {
     content: '\f11f';
 }
 .icon-pokeball {
-
+    margin: 15px 0 8px;
 }
 .icon-pokeball::before {
     content: '\f12a';
 }
 .icon-poketv {
-
+    margin: 15px 0 8px;
 }
 .icon-poketv::before {
     content: '\f12c';
 }
 .icon-joystick {
-
+    margin: 15px 0 8px;
 }
 .icon-joystick::before {
     content: '\f121';
 }
 .icon-card {
-
+    margin: 15px 0 8px;
 }
 .icon-card::before {
     content: '\f109';
 }
 .icon-videogame {
-
+    margin: 15px 0 8px;
 }
 .icon-videogame::before {
     content: '\f135';
 }
 .icon-event {
-
+    margin: 15px 0 8px;
 }
 .icon-event::before {
     content: '\f112';
-}
-
-/* layouts */
-.col-8-1 {
-    width: 12.5%;
-}
-.col-8-2 {
-    width: 25%;
-}
-.col-8-3 {
-    width: 37.5%;
-}
-.col-8-4 {
-    width: 50%;
-}
-.col-8-5 {
-    width: 62.5%;
-}
-.col-8-6 {
-    width: 75%;
-}
-.col-8-7 {
-    width: 87.5%;
-}
-.col-8-8 {
-    width: 100%;
-}
-.col-10-1 {
-    width: 10%;
-}
-.col-10-2 {
-    width: 20%;
-}
-.col-10-3 {
-    width: 30%;
-}
-.col-10-4 {
-    width: 40%;
-}
-.col-10-5 {
-    width: 50%;
-}
-.col-10-6 {
-    width: 60%;
-}
-.col-10-7 {
-    width: 70%;
-}
-.col-10-8 {
-    width: 80%;
-}
-.col-10-9 {
-    width: 90%;
-}
-.col-10-10 {
-    width: 100%;
-}
-.table {
-    display: table;
-    width: 100%;
-}
-.table-cell {
-    display: table-cell;
-    vertical-align: middle;    
-}
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
 }
 
 /* gus-nav */
@@ -405,9 +278,67 @@ body {
 .dex {
     overflow: hidden;
 }
-.dex-flag-wrap {
+.dex-title-wrap {
     max-width: 930px;
+    text-align: left;
+    margin: 100px auto 0;    
 }
-.bold {
-    font-weight: 700px;
+.dex-title {
+    padding: 8px 16px;
+    display: inline-block;
+}
+.dex-gallery-wrap {
+    overflow: hidden;
+}
+.dex-gallery {
+    white-space: nowrap;
+    font-size: 0;
+}
+.dex-card-wrap {
+    display: inline-block;
+    width: 250px;
+}
+.dex-card {
+    margin: 2px 1px 0;
+}
+.dex-avatar-wrap {
+    background-color: #555;
+    padding: 16px;
+    overflow: hidden;
+    position: relative;    
+}
+.dex-id {
+    color: #999;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Flexo-Bold",arial,sans-serif;
+    height: 250px;
+    line-height: 250px;
+    margin: 0;
+}
+.dex-avatar {
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.dex-desc {
+    font-size: 0;
+}
+.dex-desc-cols {
+    overflow: hidden;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    font-size: 16px;
+}
+.dex-desc-cols > h5,
+.dex-desc-cols > h6 {
+    margin: 16px 8px;
+}
+.white-bottom-border {
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
 }

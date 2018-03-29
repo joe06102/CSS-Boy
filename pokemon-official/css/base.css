@@ -1,0 +1,135 @@
+/* layouts */
+.col-8-1 {
+    width: 12.5%;
+}
+.col-8-2 {
+    width: 25%;
+}
+.col-8-3 {
+    width: 37.5%;
+}
+.col-8-4 {
+    width: 50%;
+}
+.col-8-5 {
+    width: 62.5%;
+}
+.col-8-6 {
+    width: 75%;
+}
+.col-8-7 {
+    width: 87.5%;
+}
+.col-8-8 {
+    width: 100%;
+}
+.col-10-1 {
+    width: 10%;
+}
+.col-10-2 {
+    width: 20%;
+}
+.col-10-3 {
+    width: 30%;
+}
+.col-10-4 {
+    width: 40%;
+}
+.col-10-5 {
+    width: 50%;
+}
+.col-10-6 {
+    width: 60%;
+}
+.col-10-7 {
+    width: 70%;
+}
+.col-10-8 {
+    width: 80%;
+}
+.col-10-9 {
+    width: 90%;
+}
+.col-10-10 {
+    width: 100%;
+}
+.table {
+    display: table;
+    width: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;    
+}
+.block {
+    display: block;
+    margin: 0 auto;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* color */
+.white {
+    color: #fff;
+}
+.black {
+    color: #000;
+}
+.yellow {
+    color: #eb3;
+}
+.red {
+    color: #e31;
+}
+.azure {
+    color: #3ad;
+}
+.aqua {
+    color: #25c;
+}
+.orange {
+    color: #f73;
+}
+.green {
+    color: #5b6;
+}
+.purple {
+    color: #85c;
+}
+.gray {
+    color: #999;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-black {
+    background-color: #000;
+}
+.bg-yellow {
+    background-color: #eb3;
+}
+.bg-red {
+    background-color: #e31;
+}
+.bg-azure {
+    background-color: #3ad;
+}
+.bg-aqua {
+    background-color: #25c;
+}
+.bg-orange {
+    background-color: #f73;
+}
+.bg-green {
+    background-color: #5b6;
+}
+.bg-purple {
+    background-color: #85c;
+}
+
+/* flow */
+.text-right {
+    text-align: right;
+}
