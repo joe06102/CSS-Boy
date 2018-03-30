@@ -283,9 +283,52 @@ body {
     text-align: left;
     margin: 100px auto 0;    
 }
+.chamfer {
+    position: absolute;
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+}
+.chamfer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -4px; /* smaller chamfer than -8px  */
+    border-width: 8px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent; 
+    width: 0;
+    height: 0;
+}
+.chamfer::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff; 
+    width: 0;
+    height: 0;
+}
 .dex-title {
     padding: 8px 16px;
     display: inline-block;
+    position: relative;
+}
+.dex-title::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -4px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent; 
+    width: 0;
+    height: 0;
 }
 .dex-gallery-wrap {
     overflow: hidden;
