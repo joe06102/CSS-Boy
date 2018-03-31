@@ -415,3 +415,114 @@ body {
     border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
+
+/* footer */
+.footer {
+    font-size: 0;
+}
+.company-wrap {
+    font-size: 14px;
+}
+.company {
+    margin: 0 0 0 auto;
+    padding: 0 0 0 24px;
+    max-width: 300px;
+    border-right: 2px solid #000;
+}
+.company-title {
+    margin: 16px auto;
+    font-size: 22px;
+    font-family: "Flexo-Medium",arial,sans-serif;
+}
+.footer-link-wrap {
+    margin: 16px auto;
+}
+.footer-link {
+    margin: 8px 0;
+    font-family: "Roboto",arial,sans-serif;
+    font-weight: 700;
+}
+.footer-link::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    /*
+     * vertical-align: middle aligns the center of the inline boxes to the cross point of char 'x' 
+     * align the center of the triangle to the container's midline instead of cross point of char 'x'
+    */
+    vertical-align: middle;
+    margin-top: -.5ex; 
+
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #999;
+}
+.share-wrap {
+    font-size: 14px;
+}
+.share {
+    padding: 0 12px;
+}
+.share-title {
+    margin: 24px 0 8px 8px;
+}
+.share-links-wrap {
+    font-size: 0;
+    margin: 8px 0 8px 8px;    
+}
+.share-link {
+    width: 34px;
+    height: 34px;
+    margin: 8px 6px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+.facebook {
+    background: url('../img/social-icons.png');
+}
+.youtube {
+    background: url('../img/social-icons.png');
+    background-position: -175px 0;
+}
+.twitter {
+    background: url('../img/social-icons.png');
+    background-position: -70px 0;
+}
+.ins {
+    background: url('../img/social-icons.png');
+    background-position: -210px 0;
+}
+.tumblur {
+    background: url('../img/social-icons.png');
+    background-position: -140px 0;
+}
+.trademarks-wrap {
+    font-size: 14px;
+}
+.trademarks {
+    margin: 16px 0;
+    padding: 0 24px;
+    border-left: 2px solid #000;    
+}
+.placeholder {
+    margin: 36px 0;
+    overflow: hidden;
+}
+.cert-wrap {
+    overflow: hidden;
+    margin: 0;
+}
+.cert-img {
+    float: left;
+    margin-right: 24px;
+}
+.privacy {
+    text-decoration: underline;
+    font-size: 12px;
+}
+.reservation {
+    font-size: 12px;
+    font-weight: 400;
+}

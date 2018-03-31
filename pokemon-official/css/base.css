@@ -107,6 +107,9 @@
 .bg-black {
     background-color: #000;
 }
+.bg-light-black {
+    background-color: #222;
+}
 .bg-yellow {
     background-color: #eb3;
 }
