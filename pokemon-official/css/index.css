@@ -526,3 +526,13 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+.flag-icon {
+    width: 10px;
+    height: 8px;
+    background: url('../img/flags.png');
+    background-repeat: no-repeat;
+    background-position: -12px -22px;
+    background-size: initial;
+    position: absolute;
+    margin: 4px 8px;
+}
